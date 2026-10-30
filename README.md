@@ -71,3 +71,9 @@ These are review steps, not verified compatibility results:
 - [ ] Recheck institutional references and the independent-redesign disclaimer after changing page content.
 - [ ] After publishing, preview the published result and repeat the relevant asset, navigation, and layout checks.
 - [ ] Review the change summary and README claims before publishing.
+
+## Final release review
+
+- Confirm the documented starting point still matches the files present at the repository root.
+- Check the scripts and dependency versions in `package.json`; use the repository's declared workflow rather than assuming a generic build command.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
