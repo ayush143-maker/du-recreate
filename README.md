@@ -21,4 +21,9 @@ The package also provides `npm start` to serve the production build.
 
 ## Development checks
 
-The repository includes `npm run lint` and `npm run typecheck`. Keep the project clearly labelled as an independent redesign and check institutional references when editing.
+After making changes, review them in the development server and run the repository's available checks:
+
+    npm run lint
+    npm run typecheck
+
+Use `npm run build` to check that a production build can be created. Keep the project clearly labelled as an independent redesign and check institutional references when editing.
