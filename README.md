@@ -34,16 +34,16 @@ npm run typecheck
 
 Use `npm run build` to check that a production build can be created. Keep the project clearly labelled as an independent redesign, and check institutional references when editing.
 
-## Manual review checklist
+## Browser and platform review checklist
 
-Use these actions when reviewing a change; this checklist is separate from the development commands and does not report completed results or measured performance.
+These are review steps, not verified compatibility results. Record the browsers, versions, devices, and findings separately; this README does not claim that testing has been completed.
 
-- [ ] Start the development server using the documented command and open the page it serves. Locate the relevant page or component under `src/` when reviewing a change.
+- [ ] Run the app and review the page or component affected by the change. Locate it and its dependencies under `src/`.
+- [ ] Check the experience in current stable browsers relevant to the Next.js and React app and its intended audience. Include desktop and mobile browsers where applicable; do not infer support for browsers or devices that were not checked.
+- [ ] In each browser, inspect the developer console for errors and warnings related to the page. Use the Network panel to check failed requests, unexpected redirects, and resources that do not load.
+- [ ] Follow local image, font, stylesheet, script, and other asset imports or URLs from the relevant source. Confirm local paths resolve from the files that use them, including after moving files. Review remote asset requests for correct URLs and intentional use; distinguish a failed remote request from a missing local file.
+- [ ] Review the rendered page at narrow mobile and wide desktop viewport sizes. Check content, navigation, and media for clipping, horizontal overflow, awkward wrapping, and usability. Where possible, also check on an actual mobile device rather than treating viewport emulation as device testing.
 - [ ] Follow visible navigation and calls to action, and review their destinations or responses against the implementation. Do not infer official university services or backend capabilities from the redesign.
-- [ ] Inspect image, audio, video, font, and script references and imports in the relevant source files. Check that each local asset path resolves to an existing file.
-- [ ] Check that referenced assets are used by the application; remove files only after confirming they are not referenced elsewhere. Consider whether large media is necessary before adding it, without treating this checklist as a performance measurement.
-- [ ] Review external font or script URLs in the source. Confirm that each dependency is intentional and still used, and document its purpose if it is part of the interface.
-- [ ] Review the page at narrow and wide viewport sizes. Check content, navigation, and media for visibility and usability.
 - [ ] Recheck institutional references and the independent-redesign disclaimer after changing page content.
 
 ## Accessibility review checklist
