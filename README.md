@@ -34,6 +34,12 @@ npm run typecheck
 
 Use `npm run build` to check that a production build can be created. Keep the project clearly labelled as an independent redesign, and check institutional references when editing.
 
+## Configuration and data handling
+
+Review `next.config.ts` and the existing package configuration before changing project settings. Do not put secret values in tracked source or configuration files. No `.env.example` is listed among the root files; if a template is added, document only the variables the project actually uses, use placeholder values, and keep real credentials in an appropriate untracked local configuration. Do not assume that a variable is private merely because its name suggests it is: values exposed to client-side code are visible in the browser. Check the relevant source and configuration before deciding whether a value can remain server-side or is delivered to the client.
+
+The repository description does not establish a backend, data-collection flow, or production service. Avoid documenting one or making data-handling claims without checking the implementation in `src/` and the actual configuration.
+
 ## Browser and platform review checklist
 
 These are review steps, not verified compatibility results. Record the browsers, versions, devices, and findings separately; this README does not claim that testing has been completed.
