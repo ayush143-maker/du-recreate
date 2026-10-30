@@ -34,6 +34,16 @@ npm run typecheck
 
 Use `npm run build` to check that a production build can be created. Keep the project clearly labelled as an independent redesign, and check institutional references when editing.
 
+## Manual review checklist
+
+Use these actions when reviewing a change; this checklist is separate from the development commands above and does not report completed results.
+
+- Start the development server using the documented command and open the page it serves. Locate the relevant page or component under `src/` when reviewing a change.
+- Follow visible navigation and calls to action, and review their destinations or responses against the implementation. Do not infer official university services or backend capabilities from the redesign.
+- Inspect image references and imports in the relevant source files. Check that referenced asset paths match the files in the project and that media appears as intended.
+- Review the page at narrow and wide viewport sizes. Check content, navigation, and media for visibility and usability.
+- Recheck institutional references and the independent-redesign disclaimer after changing page content.
+
 ## Personalizing the redesign
 
-The application source is under `src/`; locate the relevant page or component there before changing visible copy or styling. **Review suggestion:** inspect the actual source tree for existing asset files and imports before replacing or adding images. Preserve import paths and any relative asset references when moving files, and update references deliberately if a file's location changes. For project-level settings, review `next.config.ts` and the existing package scripts rather than assuming configuration options. Recheck the independent-redesign disclaimer when editing institutional content.
+The application source is under `src/`; locate the relevant page or component there before changing visible copy or styling. Inspect the actual source tree for existing asset files and imports before replacing or adding images. Preserve import paths and any relative asset references when moving files, and update references deliberately if a file's location changes. For project-level settings, review `next.config.ts` and the existing package scripts rather than assuming configuration options.
