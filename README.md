@@ -17,7 +17,7 @@ Create a production build with:
 
     npm run build
 
-The package also provides `npm start` to serve the production build.
+The package also provides `npm start` to serve the production build. If the production start fails, create the build first with `npm run build`.
 
 ## Development checks
 
