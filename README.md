@@ -1,15 +1,20 @@
 # du-recreate
 
-An unofficial editorial redesign concept for the University of Delhi website, built with Next.js and React. It is a student/portfolio concept and is not affiliated with or endorsed by the University of Delhi.
+**du-recreate** is an unofficial editorial redesign concept for the University of Delhi website. Built with Next.js and React, it explores a more editorial presentation of university information as a student portfolio project. It is not affiliated with, maintained by, or endorsed by the University of Delhi.
 
 ## Run locally
 
-Install dependencies with npm install, then start the development server with npm run dev. Run npm run build to create a production build.
+Install the dependencies and start the Next.js development server:
 
-## Development workflow
+    npm install
+    npm run dev
 
-Start with the package scripts and the existing source organization. Locate the page or screen component and its imports before changing the UI. Keep shared components and styles consistent rather than duplicating the same behavior in multiple places.
+Create a production build with:
 
-## Validation
+    npm run build
 
-Run the development server while iterating, then run the production build before deployment. Check type/build output, browser-console messages, navigation, and the final deployed page. Native-wrapper projects also need a separate on-device test after syncing the web build.
+The package also provides npm start for serving the production build.
+
+## Development checks
+
+The repository includes npm run lint and npm run typecheck. Use them when changing page components or styles. Keep the concept clearly labelled as an independent redesign and make sure navigation and institutional references remain accurate.
