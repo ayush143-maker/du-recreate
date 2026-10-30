@@ -1,6 +1,6 @@
 # du-recreate
 
-An unofficial editorial redesign concept for the University of Delhi website, built with Next.js and React as a student portfolio project. It is not affiliated with, maintained by, or endorsed by the University of Delhi.
+An unofficial editorial redesign concept for the University of Delhi website, built with Next.js and React as a student portfolio project. It is not affiliated with, maintained by, or endorsed by the University of Delhi. This repository describes a website redesign concept; it does not establish any official University of Delhi services or backend capabilities.
 
 ## Run locally
 
