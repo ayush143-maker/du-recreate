@@ -33,3 +33,7 @@ npm run typecheck
 ```
 
 Use `npm run build` to check that a production build can be created. Keep the project clearly labelled as an independent redesign, and check institutional references when editing.
+
+## Personalizing the redesign
+
+The application source is under `src/`; locate the relevant page or component there before changing visible copy or styling. **Review suggestion:** inspect the actual source tree for existing asset files and imports before replacing or adding images. Preserve import paths and any relative asset references when moving files, and update references deliberately if a file's location changes. For project-level settings, review `next.config.ts` and the existing package scripts rather than assuming configuration options. Recheck the independent-redesign disclaimer when editing institutional content.
